@@ -35,20 +35,6 @@ class Wizard(Creature):
             return False
 
 
-
-class Creature:
-
-    def __init__(self, name, level):
-        self.name = name
-        self.level = level
-
-    def __repr__(self):
-        return f"Creature {self.name} of level {self.level}"
-
-    def get_defensive_roll(self):
-        return random.randint(1, 12) * self.level
-
-
 class SmallAnimal(Creature):
 
     def get_defensive_roll(self):
